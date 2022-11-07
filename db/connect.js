@@ -4,6 +4,7 @@ require('dotenv').config();
 const connectionOptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 };
 
 module.exports = (testing = false) => connect(
